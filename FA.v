@@ -1,4 +1,11 @@
-`include "D:/Sarunesh/Projects/Modelsim/Half_Adder/HA.v"
+module HA(a, b, sum, carry);
+	output reg sum;
+	output reg carry;
+	input a;
+	input b;
+
+	always@* {carry,sum} = a + b;
+endmodule
 
 module FA(
 		  output sum,
